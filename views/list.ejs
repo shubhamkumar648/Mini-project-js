@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+     <h1><%= Kindofday %></h1>
+
+     <ul>
+          <li>buy food</li>
+          <li> <%= newListitems %></li>
+
+        <% for  (let i=0; i<newListitems.lenght; i++;) {  %>
+             <li> <%=  newListitems[i]  %></li>
+       <% } %>
+     </ul>
+
+     <form action = "/",  method="POST">
+
+<input type = "text" name= "newItem" placeholder="type itemName">
+
+  <button type="submit" name ="button">Submit</button>
+
+     </form>
+
+</body>
+
+</html>
